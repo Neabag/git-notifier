@@ -15,7 +15,7 @@ receiver.router.post("/github-webhook/",(req, res) => {
     // You're working with an express req and res now.
     res.send("yay!");
   });
-receiver.router.post("/hello", (req, res) => {
+receiver.router.get("/hello", (req, res) => {
   // You're working with an express req and res now.
   res.send("yay!");
 });
