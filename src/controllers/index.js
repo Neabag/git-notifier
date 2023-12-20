@@ -11,7 +11,7 @@ receiver.router.use(bodyParser.json());
 // Other web requests are methods on receiver.router
 receiver.router.post("/webhook", gitNotifier);
 
-receiver.router.post("/slack/events",(req, res) => {
+receiver.router.post("/github-webhook/",(req, res) => {
     // You're working with an express req and res now.
     res.send("yay!");
   });
