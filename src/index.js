@@ -39,7 +39,7 @@ process.on('unhandledRejection', exit);
 process.on('SIGINT', shutdownOnSIGINT);
 process.on('SIGTERM', shutdownOnSIGTERM);
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT;
 
 (async () => {
   await app.start(PORT);
